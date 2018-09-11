@@ -27,7 +27,7 @@ public class CyclicBuffer {
             int bufferIndex = (this.readPointer + i) % this.size;
             result[i] = buffer[bufferIndex];
         }
-        this.readPointer = (this.writePointer + amount) % this.size;
+        this.readPointer = (this.readPointer + amount) % this.size;
         return result;
     }
 

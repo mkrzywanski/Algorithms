@@ -1,3 +1,5 @@
+package string;
+
 public class LongestCommonSubsequence {
     //Invoking method with text strings in different order gives two longest subsequences
     //Another solution would be changing conditional statements inside while loop to move to the left column first instead to higher row.
