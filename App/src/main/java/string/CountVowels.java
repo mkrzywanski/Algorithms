@@ -13,6 +13,7 @@ public class CountVowels {
         int other = 0;
 
         Set<Character> vowels = new HashSet<>();
+
         vowels.add('a');
         vowels.add('e');
         vowels.add('i');

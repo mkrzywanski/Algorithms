@@ -13,19 +13,19 @@ public class VariationsWithoutRepetitions {
         }
     }
 
-    public static Set<String> variations(int[] array, int r) {
+    public static Set<String> variations(int[] array, int k) {
         Set<String> resultVariations = new HashSet<>();
-        if (r == 1) {
+        if (k == 1) {
             for (int i = 0; i < array.length; i++) {
                 String variation = String.valueOf(array[i]);
                 resultVariations.add(variation);
             }
         } else {
-            r--;
+            k--;
             for (int i = 0; i < array.length; i++) {
                 int currentElement = array[i];
                 int[] arrayWithoutCurrentElement = removeElementByIndex(array, i);
-                Set<String> variations = variations(arrayWithoutCurrentElement, r);
+                Set<String> variations = variations(arrayWithoutCurrentElement, k);
                 for (String variation : variations) {
                     resultVariations.add(String.valueOf(currentElement) + variation);
                 }

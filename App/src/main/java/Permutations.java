@@ -3,7 +3,7 @@ import java.util.*;
 //Permutations with and without repetitions.
 public class Permutations {
     public static void main(String[] args) {
-        char[] tab = {'k','k','k','o', 'o','l'};
+        char[] tab = {'k','o','l'};
         findPermutations(tab);
     }
 

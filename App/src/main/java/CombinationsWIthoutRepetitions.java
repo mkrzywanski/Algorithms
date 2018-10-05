@@ -4,7 +4,7 @@ public class CombinationsWIthoutRepetitions {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4};
 
-        Set<String> combinations = combinations(arr, 1);
+        Set<String> combinations = combinations(arr, 4);
 
         Set<String> result = new HashSet<>();
         for(String st : combinations) {

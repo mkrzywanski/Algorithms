@@ -41,6 +41,7 @@ public class BST {
 
         currentRoot.left = left;
         currentRoot.right = right;
+
         return currentRoot;
     }
 }
