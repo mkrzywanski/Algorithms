@@ -5,32 +5,32 @@ public class Stack<T> {
     private static class Node<T> {
         public Node(T data) {
             this.data = data;
-            this.next = null;
+            this.previous = null;
         }
 
         public Node() {
             this.data = null;
-            this.next = null;
+            this.previous = null;
         }
 
-        Node<T> next;
+        Node<T> previous;
         T data;
 
         boolean isEndNode() {
-            return this.data == null && this.next == null;
+            return this.data == null && this.previous == null;
         }
     }
 
     public void push(T value) {
         Node<T> node = new Node<>(value);
-        node.next = top;
+        node.previous = top;
         top = node;
     }
 
     public T pop() {
         T value = top.data;
         if(!top.isEndNode()) {
-            top = top.next;
+            top = top.previous;
         }
         return value;
     }

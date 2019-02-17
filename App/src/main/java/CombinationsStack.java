@@ -34,7 +34,6 @@ public class CombinationsStack {
                             sets.add(set);
                             break;
                         }
-                        //sets.add(set);
                     } else {
                         stack.push(set);
                     }

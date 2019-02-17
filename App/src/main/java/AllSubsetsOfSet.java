@@ -24,6 +24,7 @@ public class AllSubsetsOfSet {
         Set<String> otherSubsets = allSubsets(restString);
 
         subsets.addAll(otherSubsets);
+
         for(String temp : otherSubsets) {
             subsets.add(firstChar + temp);
         }

@@ -37,7 +37,4 @@ public class MergeSortedArrays {
         }
         return result;
     }
-
-    //[1,3,5,6,7]
-    //[1,2,5,7,8]
 }

@@ -31,13 +31,5 @@ public class MoveZerosToRight {
         temp = tab[i];
         tab[i] = tab[j];
         tab[j] = temp;
-
-//        int x = tab[i];
-//        int y = tab[j];
-//        x = x ^ y;
-//        y= x ^ y;
-//        x = x ^ y;
-//        tab[i] = x;
-//        tab[j] = y;
     }
 }
